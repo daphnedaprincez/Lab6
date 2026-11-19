@@ -1,4 +1,4 @@
-#checked:not(:target) { visibility: hidden; }
+#checked:not(:target) { display: none; }
 :root, [data-bs-theme="light"] {
   --bs-primary-base: #a33420;
   --bs-primary-fg: #91301e;

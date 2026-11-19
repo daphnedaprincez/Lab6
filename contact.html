@@ -1,76 +1,89 @@
-<main id="main" class="container py-5">
-  <div class="row g-4">
-    <header class="col-12 md:col-4">
-      <p class="kicker">Poster Lovers / Contact</p>
-      <h1 class="feature-title">Contact the studio</h1>
-      <p>Have a botanical poster to share or a question about a print in the gallery?</p>
-      <p class="small">
-        This class project checks your enquiry in your browser. Your message stays on this device.
-      </p>
-    </header>
-
-    <div class="col-12 md:col-8">
-      <form class="card p-4" action="contact.html#checked" method="get">
-        <div class="row g-4">
-          <div class="col-12 md:col-6">
-            <div class="form-field">
-              <label for="first-name">First name</label>
-              <input class="form-control" type="text" id="first-name"
-                     autocomplete="given-name" required>
-            </div>
-          </div>
-
-          <div class="col-12 md:col-6">
-            <div class="form-field">
-              <label for="last-name">Last name</label>
-              <input class="form-control" type="text" id="last-name"
-                     autocomplete="family-name" required>
-            </div>
-          </div>
-
-          <div class="col-12 md:col-6">
-            <div class="form-field">
-              <label for="email">Email</label>
-              <input class="form-control" type="email" id="email"
-                     autocomplete="email" placeholder="you@example.com" required>
-            </div>
-          </div>
-
-          <div class="col-12 md:col-6">
-            <div class="form-field">
-              <label for="enquiry-topic">Enquiry topic</label>
-              <select class="form-control" id="enquiry-topic" required>
-                <option value="">Choose a topic</option>
-                <option value="gallery">Ask about a gallery poster</option>
-                <option value="suggestion">Suggest a botanical print</option>
-                <option value="feedback">Share feedback on the collection</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="col-12 md:col-6">
-            <div class="form-field">
-              <label for="message">Message</label>
-              <textarea class="form-control" id="message" rows="4" required></textarea>
-            </div>
-          </div>
-
-          <div class="col-12 md:col-6">
-            <div class="form-field">
-              <input class="check" type="checkbox" id="consent" required>
-              <label for="consent">I agree to have this demo check my enquiry locally.</label>
-            </div>
-          </div>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact the Studio | Poster Lovers</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="js/contact.js"></script>
+</head>
+<body>
+  <a class="visually-hidden-focusable" href="#main">Skip to content</a>
+  <nav class="navbar md:navbar-expand py-3 border-bottom" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><span class="mark" aria-hidden="true">✳</span> Poster Lovers</a>
+      <button class="navbar-toggler btn-icon" type="button" data-bs-toggle="drawer" data-bs-target="#menu" aria-controls="menu" aria-label="Open menu"><span class="navbar-toggler-icon" aria-hidden="true"></span></button>
+      <dialog class="drawer drawer-end drawer-instant" id="menu" aria-labelledby="menu-label">
+        <div class="drawer-header">
+          <p class="drawer-title" id="menu-label">Poster Lovers menu</p>
+          <button class="btn-close" type="button" data-bs-dismiss="drawer" aria-label="Close menu"></button>
         </div>
-
-        <div class="mt-4">
-          <button class="btn-solid theme-primary" type="submit">Check enquiry</button>
+        <div class="drawer-body">
+          <ul class="nav navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html#archive">Print archive</a></li>
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact</a></li>
+          </ul>
         </div>
-      </form>
-
-      <p id="checked" class="p-3 mt-3" tabindex="-1">
-        Your enquiry passed the form checks. No message was sent.
-      </p>
+      </dialog>
     </div>
-  </div>
-</main>
+  </nav>
+  <main id="main" class="container py-5">
+    <div class="row g-4">
+      <header class="col-12 md:col-4">
+        <p class="kicker">Poster Lovers / Contact</p>
+        <h1 class="feature-title">Contact Us</h1>
+        <p>Have a botanical poster to share or a question about a print in the gallery?</p>
+      </header>
+      <div class="col-12 md:col-8">
+        <form action="contact.html#checked" method="get" class="card p-4">
+          <div class="row g-4">
+            <div class="col-12 md:col-6">
+              <div class="form-field">
+                <label for="first">First name</label>
+                <input class="form-control" id="first" type="text" autocomplete="given-name" required>
+              </div>
+            </div>
+            <div class="col-12 md:col-6">
+              <div class="form-field">
+                <label for="last">Last name</label>
+                <input class="form-control" id="last" type="text" autocomplete="family-name" required>
+              </div>
+            </div>
+            <div class="col-12 md:col-6">
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input class="form-control" id="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+              </div>
+            </div>
+            <div class="col-12 md:col-6">
+              <div class="form-field">
+                <label for="topic">Enquiry topic</label>
+                <select class="form-control" id="topic" required><option value="">Choose a topic</option><option>Print submission</option><option>Gallery poster</option><option>General enquiry</option></select>
+              </div>
+            </div>
+            <div class="col-12 md:col-6">
+              <div class="form-field">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="4" required></textarea>
+              </div>
+            </div>
+            <div class="col-12 md:col-6">
+              <div class="form-field">
+                <input class="check" id="consent" type="checkbox" required>
+                <label for="consent">I agree to have this demo check my enquiry locally.</label>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4"><button type="submit" class="btn-solid theme-primary">Check enquiry</button></div>
+        </form>
+        <p id="checked" role="status" class="p-3" tabindex="-1">Your enquiry passed the form checks. No message was sent.</p>
+      </div>
+    </div>
+  </main>
+  <footer class="border-top py-4"><div class="container small">Poster Lovers · Original poster artwork</div></footer>
+</body>
+</html>
