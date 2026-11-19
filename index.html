@@ -226,51 +226,134 @@
             </div>
           </article>
         </div>
-        <div class="col-12 md:col-6 lg:col-4">
-          <article class="card h-100">
-            <img class="card-img-top w-100 h-auto" src="images/print-4.webp" width="960" height="620" alt="Dark wave lines ripple across a blue poster.">
+       <div class="col-12 md:col-6 lg:col-4">
+          <article class="card h-100 overflow-hidden">
+            <div class="card-img-top poster-stage position-relative overflow-hidden border-bottom">
+              <img
+                class="poster-sheet poster-back position-absolute"
+                src="images/LilacPoster.jpg"
+                alt=""
+              >
+              <img
+                class="poster-sheet poster-front position-absolute"
+                src="images/LilacPoster.jpg"
+                alt="Four clusters of purple lilac blossoms and green leaves beneath large LILAC lettering on a cream poster."
+              >
+            </div>
+
             <div class="card-body d-flex flex-column">
-              <h3>Signal</h3>
-              <p>A stack of blue waves stretches a single sound across the width of a page.</p>
+              <h3>Lavender in Lilac</h3>
+              <p>Lilac blossoms range from deep violet to pale lavender, with the tallest cluster reaching into the title.</p>
+
               <div class="accordion mt-auto">
                 <details class="accordion-item">
-                  <summary class="accordion-header">Details <span aria-hidden="true">⌄</span></summary>
-                  <div class="accordion-body">The rows shift slightly out of step, so the crest travels diagonally down the sheet.</div>
+                  <summary class="accordion-header">
+                    Details <span aria-hidden="true">⌄</span>
+                  </summary>
+                  <div class="accordion-body">
+                    Look closely at the word LILAC. Tiny floral outlines fill each
+                    letter, echoing the individual blossoms in the illustration below.
+                  </div>
                 </details>
               </div>
-              <button class="btn-outline theme-primary mt-3" type="button" data-bs-toggle="dialog" data-bs-target="#signal" aria-label="Try the Signal print exercise">Try this print exercise</button>
-              <dialog class="dialog dialog-instant" id="signal" aria-labelledby="signal-title">
-                <div class="dialog-header"><h4 class="dialog-title" id="signal-title">Signal exercise</h4></div>
-                <p class="dialog-body">Hum one note, then sketch its rhythm as a line. Repeat the line ten times and shift each crest slightly.</p>
-                <div class="dialog-footer"><button class="btn-solid theme-primary" type="button" data-bs-dismiss="dialog">Close</button></div>
+
+              <button
+                class="btn-outline theme-primary align-self-start mt-3"
+                type="button"
+                data-bs-toggle="dialog"
+                data-bs-target="#lilac-dialog"
+                aria-label="Learn more about Lavender in Lilac"
+              >
+                Learn more
+              </button>
+
+              <dialog
+                class="dialog dialog-instant"
+                id="lilac-dialog"
+                aria-labelledby="lilac-dialog-title"
+              >
+                <div class="dialog-header">
+                  <h4 class="dialog-title" id="lilac-dialog-title">About Lavender in Lilac</h4>
+                </div>
+                <div class="dialog-body">
+                  <p class="mb-0">
+                    The left margin identifies the flower as <i>Syringa vulgaris</i>.
+                    Across from it, Japanese lettering sits above a short poem.
+                    Together, these details give the print the feel of a page from
+                    an illustrated botanical collection.
+                  </p>
+                </div>
+                <div class="dialog-footer">
+                  <button class="btn-solid theme-primary" type="button" data-bs-dismiss="dialog">
+                    Close
+                  </button>
+                </div>
+              </dialog>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 md:col-6 lg:col-4">
+          <article class="card h-100 overflow-hidden">
+            <div class="card-img-top poster-stage position-relative overflow-hidden border-bottom">
+              <img
+                class="poster-sheet poster-front position-absolute"
+                src="images/Blue Poster.jpg"
+                alt="Pale blue and deep blue hydrangeas in front of a garden gate beneath the navy title HYDRANGEA."
+              >
+            </div>
+
+            <div class="card-body d-flex flex-column">
+              <h3>Hydrangeas in the Rain</h3>
+              <p>Raindrops bead on dark leaves beneath clusters of hydrangeas.</p>
+
+              <div class="accordion mt-auto">
+                <details class="accordion-item">
+                  <summary class="accordion-header">
+                    Details <span aria-hidden="true">⌄</span>
+                  </summary>
+                  <div class="accordion-body">
+                    Look between the two flower heads on the left to find the iron
+                    garden gate. Its fine blue bars fade into the background, making
+                    the pale petals in front stand out.
+                  </div>
+                </details>
+              </div>
+
+              <button
+                class="btn-outline theme-primary align-self-start mt-3"
+                type="button"
+                data-bs-toggle="dialog"
+                data-bs-target="#hydrangea-dialog"
+                aria-label="Learn more about Hydrangeas in the Rain"
+              >Learn more</button>
+
+              <dialog
+                class="dialog dialog-instant"
+                id="hydrangea-dialog"
+                aria-labelledby="hydrangea-dialog-title"
+              >
+                <div class="dialog-header">
+                  <h4 class="dialog-title" id="hydrangea-dialog-title">About Hydrangeas in the Rain</h4>
+                </div>
+                <div class="dialog-body">
+                  <p class="mb-0">
+                    The poster names the flower in three places. HYDRANGEA stretches
+                    across the top and a small botanical label identifies it as <i>Hydrangea macrophylla</i>.
+                    A handwritten line about rain beneath the title sets the mood for the garden scene.
+                  </p>
+                </div>
+                <div class="dialog-footer">
+                  <button class="btn-solid theme-primary" type="button" data-bs-dismiss="dialog">
+                    Close
+                  </button>
+                </div>
               </dialog>
             </div>
           </article>
         </div>
         <div class="col-12 md:col-6 lg:col-4">
           <article class="card h-100">
-            <img class="card-img-top w-100 h-auto" src="images/print-5.webp" width="960" height="620" alt="Large plum and cream letterforms sit on a lilac poster.">
-            <div class="card-body d-flex flex-column">
-              <h3>Soft Type</h3>
-              <p>Uppercase and lowercase letters share the frame at two very different scales.</p>
-              <div class="accordion mt-auto">
-                <details class="accordion-item">
-                  <summary class="accordion-header">Details <span aria-hidden="true">⌄</span></summary>
-                  <div class="accordion-body">Look at the enclosed spaces inside the letters. Changing their size changes how much background shows through.</div>
-                </details>
-              </div>
-              <button class="btn-outline theme-primary mt-3" type="button" data-bs-toggle="dialog" data-bs-target="#soft-type" aria-label="Try the Soft Type print exercise">Try this print exercise</button>
-              <dialog class="dialog dialog-instant" id="soft-type" aria-labelledby="soft-type-title">
-                <div class="dialog-header"><h4 class="dialog-title" id="soft-type-title">Soft Type exercise</h4></div>
-                <p class="dialog-body">Choose two letters from your name. Enlarge one until it touches the margin, then fit the smaller one into the space it leaves.</p>
-                <div class="dialog-footer"><button class="btn-solid theme-primary" type="button" data-bs-dismiss="dialog">Close</button></div>
-              </dialog>
-            </div>
-          </article>
-        </div>
-        <div class="col-12 md:col-6 lg:col-4">
-          <article class="card h-100">
-            <img class="card-img-top w-100 h-auto" src="images/print-6.webp" width="960" height="620" alt="Short and long green and cream bars share a left margin on a sage poster.">
+            <img class="card-img-top w-100 h-auto" src="images/peach poster.jpg" width="960" height="620" alt="Short and long green and cream bars share a left margin on a sage poster.">
             <div class="card-body d-flex flex-column">
               <h3>Margin Notes</h3>
               <p>Uneven rules turn a page of imagined annotations into a quiet block of colour.</p>
