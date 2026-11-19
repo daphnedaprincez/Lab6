@@ -22,4 +22,8 @@
 .nav-link.active { text-decoration: underline; text-underline-offset: .3em; }
 #checked:target { background: #e0eddb; }
 .feature-title { font-size: clamp(2.6rem, 5vw, 5rem); line-height: 1; }
-
+.featured-poster { max-width: 100%; max-height: min(55vh, 420px); width: auto; height: auto; }
+.poster-stage { aspect-ratio: 960 / 620; background: #ddd2bf; }
+.poster-sheet { height: 74%; width: auto; box-shadow: 3px 5px 0 rgb(57 43 25 / 18%); }
+.poster-back { top: 50%; left: 55%; transform: translate(-50%, -46%) rotate(-8deg); }
+.poster-front { top: 50%; left: 48%; transform: translate(-50%, -52%) rotate(7deg); }
