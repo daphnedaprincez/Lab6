@@ -352,22 +352,61 @@
           </article>
         </div>
         <div class="col-12 md:col-6 lg:col-4">
-          <article class="card h-100">
-            <img class="card-img-top w-100 h-auto" src="images/peach poster.jpg" width="960" height="620" alt="Short and long green and cream bars share a left margin on a sage poster.">
+          <article class="card h-100 overflow-hidden">
+            <div class="card-img-top poster-stage position-relative overflow-hidden border-bottom">
+              <img
+                class="poster-sheet poster-front position-absolute"
+                src="images/peach poster.jpg"
+                alt="Pink peaches and flowering branches frame a patch of blue sky beneath the large pink title PEACH."
+              >
+            </div>
+
             <div class="card-body d-flex flex-column">
-              <h3>Margin Notes</h3>
-              <p>Uneven rules turn a page of imagined annotations into a quiet block of colour.</p>
+              <h3>Peaches in the Sun</h3>
+              <p>Sunlight breaks through the peach branches, catching the droplets on a cluster of blush-pink fruit.</p>
+
               <div class="accordion mt-auto">
                 <details class="accordion-item">
-                  <summary class="accordion-header">Details <span aria-hidden="true">⌄</span></summary>
-                  <div class="accordion-body">The bars share a left margin. Their unequal lengths suggest handwriting seen from too far away to read.</div>
+                  <summary class="accordion-header">
+                    Details <span aria-hidden="true">⌄</span>
+                  </summary>
+                  <div class="accordion-body">
+                    Follow the diagonal line of peaches from the lower centre toward the upper right. 
+                    The opening in the branches gives a glimpse of blue sky between the pink blossoms.
+                  </div>
                 </details>
               </div>
-              <button class="btn-outline theme-primary mt-3" type="button" data-bs-toggle="dialog" data-bs-target="#margin-notes" aria-label="Try the Margin Notes print exercise">Try this print exercise</button>
-              <dialog class="dialog dialog-instant" id="margin-notes" aria-labelledby="margin-notes-title">
-                <div class="dialog-header"><h4 class="dialog-title" id="margin-notes-title">Margin Notes exercise</h4></div>
-                <p class="dialog-body">Pick a paragraph from your notebook and replace every line with a bar of the same length. Keep the original line breaks.</p>
-                <div class="dialog-footer"><button class="btn-solid theme-primary" type="button" data-bs-dismiss="dialog">Close</button></div>
+
+              <button
+                class="btn-outline theme-primary align-self-start mt-3"
+                type="button"
+                data-bs-toggle="dialog"
+                data-bs-target="#peach-dialog"
+                aria-label="Learn more about Peaches in the Sun"
+              >
+                Learn more
+              </button>
+
+              <dialog
+                class="dialog dialog-instant"
+                id="peach-dialog"
+                aria-labelledby="peach-dialog-title"
+              >
+                <div class="dialog-header">
+                  <h4 class="dialog-title" id="peach-dialog-title">About Peaches in the Sun</h4>
+                </div>
+                <div class="dialog-body">
+                  <p class="mb-0">
+                    In the lower left, a botanical label identifies the peach as
+                    <i>Prunus persica</i>, pairs the peach with wishes for longevity,
+                    good fortune, and happiness.
+                  </p>
+                </div>
+                <div class="dialog-footer">
+                  <button class="btn-solid theme-primary" type="button" data-bs-dismiss="dialog">
+                    Close
+                  </button>
+                </div>
               </dialog>
             </div>
           </article>
