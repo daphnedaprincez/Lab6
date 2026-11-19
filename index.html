@@ -37,7 +37,7 @@
         <div class="carousel-item active">
           <div class="row g-0 align-items-center feature">
             <div class="col-12 md:col-5 p-4 lg:p-5">
-              <p class="kicker">Featured print · 01 / 03</p>
+              <p class="kicker">Featured print</p>
               <h2 class="feature-title">Lavender in Lilac</h2>
               <p>Purple lilac blossoms on a cream poster.</p>
             </div>
@@ -60,25 +60,56 @@
       </div>
     </section>
     <section id="archive" class="mt-5" aria-labelledby="archive-title">
-      <h2 class="mb-4" id="archive-title">More print studies</h2>
+      <h2 class="mb-4" id="archive-title">More poster studies</h2>
       <div class="row g-4">
         <div class="col-12 md:col-6 lg:col-4">
-          <article class="card h-100">
-            <img class="card-img-top w-100 h-auto" src="images/print-1.webp" width="960" height="620" alt="Violet and cream concentric rings overlap on a coral poster.">
+          <article class="card h-100 overflow-hidden">
+            <div class="card-img-top poster-stage position-relative overflow-hidden border-bottom">
+              <img
+                class="poster-sheet poster-back position-absolute" src="images/Lotus Poster.jpg" alt="Botanical poster with a pale pink lotus rising above green leaves beneath the word LOTUS.">
+            </div>
+
             <div class="card-body d-flex flex-column">
-              <h3>Overprint</h3>
-              <p>Two sets of fine rings meet off-centre. Follow the overlap to see a third pattern appear.</p>
+              <h3>Lotus in Bloom</h3>
               <div class="accordion mt-auto">
                 <details class="accordion-item">
-                  <summary class="accordion-header">Details <span aria-hidden="true">⌄</span></summary>
-                  <div class="accordion-body">Try tracing one violet ring with your finger. The tighter bands form where the two sets cross.</div>
+                  <summary class="accordion-header">
+                    Details <span aria-hidden="true">⌄</span>
+                  </summary>
+                  <div class="accordion-body">
+                    Two smaller blooms frame the Chinese title 蓮花 at the bottom.
+                    Together they mirror the large flower above and draw the eye back
+                    to the centre of the poster.
+                  </div>
                 </details>
               </div>
-              <button class="btn-outline theme-primary mt-3" type="button" data-bs-toggle="dialog" data-bs-target="#overprint" aria-label="Try the Overprint print exercise">Try this print exercise</button>
-              <dialog class="dialog dialog-instant" id="overprint" aria-labelledby="overprint-title">
-                <div class="dialog-header"><h4 class="dialog-title" id="overprint-title">Overprint exercise</h4></div>
-                <p class="dialog-body">Make two copies of one ring pattern on tracing paper. Slide the top sheet sideways until the overlap seems to vibrate.</p>
-                <div class="dialog-footer"><button class="btn-solid theme-primary" type="button" data-bs-dismiss="dialog">Close</button></div>
+
+              <button
+                type="button"
+                class="btn-outline theme-primary align-self-start mt-3"
+                data-bs-toggle="dialog"
+                data-bs-target="#lotus-dialog"
+                aria-label="Learn more about Lotus in Bloom"
+              >
+                Learn more
+              </button>
+
+              <dialog class="dialog" id="lotus-dialog" aria-labelledby="lotus-dialog-title">
+                <div class="dialog-header">
+                  <h4 class="dialog-title" id="lotus-dialog-title">About Lotus in Bloom</h4>
+                </div>
+                <div class="dialog-body">
+                  <p class="mb-0">
+                    The poster’s text connects the lotus with purity and awakening in
+                    Buddhism. The illustration gives that idea a visible form: a long
+                    stem lifts the open flower into the light above the pond.
+                  </p>
+                </div>
+                <div class="dialog-footer">
+                  <button type="button" class="btn-solid theme-primary" data-bs-dismiss="dialog">
+                    Close
+                  </button>
+                </div>
               </dialog>
             </div>
           </article>
